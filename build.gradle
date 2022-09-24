@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'world.nations'
+version '1.0'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.22'
+    annotationProcessor group: 'org.projectlombok', name: 'lombok', version: '1.18.22'
+    compileOnly "com.github.MilkBowl:VaultAPI:1.7.+"
+    compileOnly fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+compileJava {
+    options.encoding = "UTF-8"
+}

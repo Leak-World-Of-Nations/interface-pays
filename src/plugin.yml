@@ -1,0 +1,13 @@
+name: WorldOfNations
+version: 1.0.0
+author: inconito001
+depend: [Factions]
+loadBefore: [Factions]
+main: world.nations.Core
+commands:
+    country:
+        description: Commande pour créer un pays
+        usage: /f country
+    lootbox:
+        description: Commande pour ajouter des items a la lootbox
+        usage: /lootbox <id> <percentage> 
